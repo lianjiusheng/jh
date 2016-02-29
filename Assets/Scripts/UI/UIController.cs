@@ -38,7 +38,7 @@ namespace MGame.UIController
         public virtual void Hide()
         {
             gameObject.SetActive(false);
-            MEventManager.Instance.SendEvent(MEvent.UI_OnHide, this);
+          	MEventManager.Instance.SendEvent(MEvent.UI_OnHide, this);
         }
 
         public virtual void Toggle()

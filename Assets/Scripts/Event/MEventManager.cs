@@ -7,7 +7,6 @@ namespace MGame.Event
 {
     public class MEventManager : Singleton<MEventManager>
     {
-
         public delegate void MEventHandler(MEvent evt, params object[] args);
 
         private HashSet<MEventHandler>[] m_AllGlobalHandler;
