@@ -11,15 +11,17 @@ public class Battle : MonoBehaviour {
     public GameObject currentPlayer;
     public GameObject currentSkill;
 
-	// Use this for initialization
-	void Start () {
 
+    void Awake()
+    {
         attackers = new GameObject[1];
         defencers = new GameObject[1];
 
         initPlayers();
-
         nextCharactor();
+    }
+	// Use this for initialization
+	void Start () {
     }
 	
     private void initPlayers()
@@ -49,7 +51,7 @@ public class Battle : MonoBehaviour {
 
 	}
 
-    private void nextCharactor()
+    public void nextCharactor()
     {
         if (currentPlayer == null)
         {

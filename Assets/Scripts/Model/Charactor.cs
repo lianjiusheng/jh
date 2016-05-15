@@ -49,7 +49,11 @@ public class Charactor : MonoBehaviour
     /// <param name="skillId"></param>
     public void OnHurt(Charactor attacker, int skillId)
     {
-            
+
+        Animator animator = gameObject.GetComponent<Animator>();
+        animator.SetInteger("state", 2);
+        GameObject battle = GameObject.Find("battle");
+        battle.GetComponent<Battle>().nextCharactor();
 
     }
 

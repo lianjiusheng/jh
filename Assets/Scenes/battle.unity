@@ -358,7 +358,7 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: .310000002
+    width: .5
     height: 1
   near clip plane: 0
   far clip plane: 100

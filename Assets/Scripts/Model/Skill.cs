@@ -9,9 +9,13 @@ public class Skill : MonoBehaviour {
     public List<Charactor> targets;
 
 
+    void Awake()
+    {
+        targets = new List<Charactor>();
+    }
+
 	// Use this for initialization
 	void Start () {
-        targets = new List<Charactor>();
     }
 	
 	// Update is called once per frame
