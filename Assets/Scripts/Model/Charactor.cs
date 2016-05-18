@@ -52,6 +52,15 @@ public class Charactor : MonoBehaviour
 
         Animator animator = gameObject.GetComponent<Animator>();
         animator.SetInteger("state", 2);
+
+        GameObject hurtTipsPrefab = (GameObject)Resources.Load("Prefabs/HurtTips");
+        GameObject hurtTipsObject = (GameObject)Instantiate(hurtTipsPrefab, gameObject.transform.position, Quaternion.identity);
+
+
+        GameObject pannel = GameObject.Find("Panel");
+        hurtTipsObject.transform.parent = pannel.transform;
+     
+
         GameObject battle = GameObject.Find("battle");
         battle.GetComponent<Battle>().nextCharactor();
 
