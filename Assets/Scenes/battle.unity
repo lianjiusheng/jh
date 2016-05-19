@@ -187,95 +187,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1374962308}
   m_RootOrder: 2
---- !u!224 &298113021 stripped
-RectTransform:
-  m_PrefabParentObject: {fileID: 22465272, guid: b447924c234d1584ebcaa9b289569367,
-    type: 2}
-  m_PrefabInternal: {fileID: 779407074}
---- !u!1001 &779407074
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1688190310}
-    m_Modifications:
-    - target: {fileID: 22465272, guid: b447924c234d1584ebcaa9b289569367, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465272, guid: b447924c234d1584ebcaa9b289569367, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465272, guid: b447924c234d1584ebcaa9b289569367, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465272, guid: b447924c234d1584ebcaa9b289569367, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465272, guid: b447924c234d1584ebcaa9b289569367, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465272, guid: b447924c234d1584ebcaa9b289569367, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465272, guid: b447924c234d1584ebcaa9b289569367, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465272, guid: b447924c234d1584ebcaa9b289569367, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465272, guid: b447924c234d1584ebcaa9b289569367, type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 54.7000008
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465272, guid: b447924c234d1584ebcaa9b289569367, type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -4.0999999
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465272, guid: b447924c234d1584ebcaa9b289569367, type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465272, guid: b447924c234d1584ebcaa9b289569367, type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465272, guid: b447924c234d1584ebcaa9b289569367, type: 2}
-      propertyPath: m_AnchorMin.x
-      value: .5
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465272, guid: b447924c234d1584ebcaa9b289569367, type: 2}
-      propertyPath: m_AnchorMin.y
-      value: .5
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465272, guid: b447924c234d1584ebcaa9b289569367, type: 2}
-      propertyPath: m_AnchorMax.x
-      value: .5
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465272, guid: b447924c234d1584ebcaa9b289569367, type: 2}
-      propertyPath: m_AnchorMax.y
-      value: .5
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465272, guid: b447924c234d1584ebcaa9b289569367, type: 2}
-      propertyPath: m_Pivot.x
-      value: .5
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465272, guid: b447924c234d1584ebcaa9b289569367, type: 2}
-      propertyPath: m_Pivot.y
-      value: .5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: b447924c234d1584ebcaa9b289569367, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &832481195
 GameObject:
   m_ObjectHideFlags: 0
@@ -445,7 +358,7 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: .5
+    width: 1
     height: 1
   near clip plane: 0
   far clip plane: 100
@@ -661,6 +574,7 @@ Transform:
   m_Children:
   - {fileID: 99614837}
   - {fileID: 1464725389}
+  - {fileID: 253943216}
   m_Father: {fileID: 0}
   m_RootOrder: 1
 --- !u!114 &1374962309
@@ -787,7 +701,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 832481196}
-  - {fileID: 298113021}
   m_Father: {fileID: 1203975237}
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}

@@ -32,7 +32,7 @@ public class Charactor : MonoBehaviour
 
         GameObject battle = GameObject.Find("battle");
 
-        skillObject.transform.parent = battle.transform;
+        skillObject.transform.SetParent(battle.transform);
         skillObject.transform.position = target.transform.position;
 
         Skill skill = skillObject.GetComponent<Skill>();
@@ -58,10 +58,9 @@ public class Charactor : MonoBehaviour
 
 
         GameObject pannel = GameObject.Find("Panel");
-        hurtTipsObject.transform.parent = pannel.transform;
-     
-
-        GameObject battle = GameObject.Find("battle");
+        hurtTipsObject.transform.SetParent(pannel.transform);
+        hurtTipsObject.transform.localScale = new Vector3(1, 1, 1); 
+          GameObject battle = GameObject.Find("battle");
         battle.GetComponent<Battle>().nextCharactor();
 
     }
