@@ -22,7 +22,7 @@ public class ConfigManager:Singleton<ConfigManager>
 
 	private Dictionary<int,ScenarioConfig> scenarioConfigs;
 
-	protected ConfigManager ()
+	public ConfigManager ()
 	{
 		skillConfigs = new Dictionary<int, SkillConfig> ();
 		heroConfigs = new Dictionary<int, HeroConfig> ();
